@@ -63,6 +63,13 @@
     <None Include="App.config" />
     <None Include="MSTest.runsettings" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HaskellInterpreter\HaskellInterpreter.fsproj">
+      <Name>HaskellInterpreter</Name>
+      <Project>{339ba229-6753-4dec-83fd-52827c4c98ac}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '11.0'">
       <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')">
